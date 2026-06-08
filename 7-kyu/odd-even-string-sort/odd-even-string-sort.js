@@ -3,13 +3,7 @@ function sortMyString(s) {
   let odds = ""
   const chars = s.split("")
   
-  chars.forEach((char, index) => {
-    if (index % 2 === 0) {
-      evens += char
-    } else {
-      odds += char
-    }
-  })
+  chars.forEach((char, index) => index % 2 === 0 ? evens += char : odds += char)
   
   return `${evens} ${odds}`
 }
